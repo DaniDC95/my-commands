@@ -1,0 +1,39 @@
+{
+  "name": "my-commands",
+  "version": "0.1.0",
+  "description": "Custom slash commands plugin for OpenCode",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "commands",
+    ".opencode"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "dev": "tsc --watch"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": "*"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "latest",
+    "@types/node": "latest",
+    "typescript": "^5.0.0",
+    "vitest": "^4.1.4"
+  },
+  "keywords": [
+    "opencode",
+    "plugin",
+    "my-commands"
+  ],
+  "license": "MIT"
+}
